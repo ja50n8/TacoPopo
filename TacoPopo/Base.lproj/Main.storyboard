@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,15 +40,32 @@
                                     <constraint firstItem="Trr-QC-V2b" firstAttribute="centerX" secondItem="Oia-E7-A1j" secondAttribute="centerX" id="gdb-sP-POi"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="DbO-CG-pvs">
+                                <rect key="frame" x="16" y="100" width="343" height="547"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fNg-0c-dOP">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="DbO-CG-pvs" firstAttribute="top" secondItem="Oia-E7-A1j" secondAttribute="bottom" constant="20" id="4Pk-6U-gSL"/>
+                            <constraint firstItem="DbO-CG-pvs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7hS-i4-IVT"/>
                             <constraint firstAttribute="trailing" secondItem="Oia-E7-A1j" secondAttribute="trailing" id="LaH-Ly-lG8"/>
                             <constraint firstItem="Oia-E7-A1j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LhN-ff-MVf"/>
+                            <constraint firstItem="DbO-CG-pvs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NNw-nm-s1d"/>
                             <constraint firstItem="Oia-E7-A1j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="h1B-ng-cv3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DbO-CG-pvs" secondAttribute="bottom" constant="20" id="htB-aM-hGu"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="DbO-CG-pvs" id="USC-eW-USH"/>
                         <outlet property="headerView" destination="Oia-E7-A1j" id="ig3-Ig-oTe"/>
                     </connections>
                 </viewController>
