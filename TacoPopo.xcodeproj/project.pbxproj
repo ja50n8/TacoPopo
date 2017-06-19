@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C6113D271EF7C0C6003A2DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6113D261EF7C0C6003A2DC0 /* AppDelegate.swift */; };
-		C6113D291EF7C0C6003A2DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6113D281EF7C0C6003A2DC0 /* ViewController.swift */; };
 		C6113D2C1EF7C0C6003A2DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6113D2A1EF7C0C6003A2DC0 /* Main.storyboard */; };
 		C6113D2E1EF7C0C6003A2DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6113D2D1EF7C0C6003A2DC0 /* Assets.xcassets */; };
 		C6113D311EF7C0C7003A2DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6113D2F1EF7C0C7003A2DC0 /* LaunchScreen.storyboard */; };
 		C6113D3C1EF7C0C7003A2DC0 /* TacoPopoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6113D3B1EF7C0C7003A2DC0 /* TacoPopoTests.swift */; };
+		C6113D4D1EF7C1AA003A2DC0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6113D4C1EF7C1AA003A2DC0 /* MainVC.swift */; };
+		C6113D4F1EF7C34D003A2DC0 /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6113D4E1EF7C34C003A2DC0 /* DropShadow.swift */; };
+		C6113D511EF7C43D003A2DC0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6113D501EF7C43D003A2DC0 /* HeaderView.swift */; };
+		C6113D531EF7C7DE003A2DC0 /* Taco.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6113D521EF7C7DE003A2DC0 /* Taco.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +31,6 @@
 /* Begin PBXFileReference section */
 		C6113D231EF7C0C6003A2DC0 /* TacoPopo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacoPopo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6113D261EF7C0C6003A2DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C6113D281EF7C0C6003A2DC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C6113D2B1EF7C0C6003A2DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C6113D2D1EF7C0C6003A2DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6113D301EF7C0C7003A2DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,10 @@
 		C6113D371EF7C0C7003A2DC0 /* TacoPopoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TacoPopoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6113D3B1EF7C0C7003A2DC0 /* TacoPopoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoPopoTests.swift; sourceTree = "<group>"; };
 		C6113D3D1EF7C0C7003A2DC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6113D4C1EF7C1AA003A2DC0 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		C6113D4E1EF7C34C003A2DC0 /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
+		C6113D501EF7C43D003A2DC0 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		C6113D521EF7C7DE003A2DC0 /* Taco.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Taco.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +83,12 @@
 		C6113D251EF7C0C6003A2DC0 /* TacoPopo */ = {
 			isa = PBXGroup;
 			children = (
-				C6113D261EF7C0C6003A2DC0 /* AppDelegate.swift */,
-				C6113D281EF7C0C6003A2DC0 /* ViewController.swift */,
-				C6113D2A1EF7C0C6003A2DC0 /* Main.storyboard */,
-				C6113D2D1EF7C0C6003A2DC0 /* Assets.xcassets */,
-				C6113D2F1EF7C0C7003A2DC0 /* LaunchScreen.storyboard */,
-				C6113D321EF7C0C7003A2DC0 /* Info.plist */,
+				C6113D4B1EF7C126003A2DC0 /* Extemsions */,
+				C6113D4A1EF7C11E003A2DC0 /* Protocols */,
+				C6113D481EF7C0FE003A2DC0 /* Model */,
+				C6113D471EF7C0F7003A2DC0 /* View */,
+				C6113D461EF7C0E8003A2DC0 /* Controller */,
+				C6113D491EF7C108003A2DC0 /* Resources */,
 			);
 			path = TacoPopo;
 			sourceTree = "<group>";
@@ -94,6 +100,57 @@
 				C6113D3D1EF7C0C7003A2DC0 /* Info.plist */,
 			);
 			path = TacoPopoTests;
+			sourceTree = "<group>";
+		};
+		C6113D461EF7C0E8003A2DC0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6113D261EF7C0C6003A2DC0 /* AppDelegate.swift */,
+				C6113D4C1EF7C1AA003A2DC0 /* MainVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C6113D471EF7C0F7003A2DC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6113D2A1EF7C0C6003A2DC0 /* Main.storyboard */,
+				C6113D2F1EF7C0C7003A2DC0 /* LaunchScreen.storyboard */,
+				C6113D501EF7C43D003A2DC0 /* HeaderView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C6113D481EF7C0FE003A2DC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6113D521EF7C7DE003A2DC0 /* Taco.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C6113D491EF7C108003A2DC0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C6113D2D1EF7C0C6003A2DC0 /* Assets.xcassets */,
+				C6113D321EF7C0C7003A2DC0 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C6113D4A1EF7C11E003A2DC0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C6113D4E1EF7C34C003A2DC0 /* DropShadow.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		C6113D4B1EF7C126003A2DC0 /* Extemsions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extemsions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +258,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6113D291EF7C0C6003A2DC0 /* ViewController.swift in Sources */,
 				C6113D271EF7C0C6003A2DC0 /* AppDelegate.swift in Sources */,
+				C6113D4F1EF7C34D003A2DC0 /* DropShadow.swift in Sources */,
+				C6113D4D1EF7C1AA003A2DC0 /* MainVC.swift in Sources */,
+				C6113D531EF7C7DE003A2DC0 /* Taco.swift in Sources */,
+				C6113D511EF7C43D003A2DC0 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
